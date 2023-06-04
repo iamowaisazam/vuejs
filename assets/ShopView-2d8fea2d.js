@@ -1,0 +1,1 @@
+import{B as a}from"./Bread-7b4fec79.js";import{o as r,c as t,a as e,F as o,P as s}from"./index-09f9510f.js";const l={__name:"ShopView",setup(c){return(n,m)=>(r(),t(o,null,[e(a),e(s)],64))}};export{l as default};
