@@ -1,12 +1,15 @@
 <script setup>
 
   import Nav from './Nav.vue'
+  import Topbar from './Topbar.vue';
+  import MenuBottom from './MenuBottom.vue'
+  
+  
 
 </script>
 
 <template>
-    <header><h1>Header</h1> 
+      <Topbar/>
       <Nav></Nav>
-        
-    </header>
+      <MenuBottom/>
 </template>

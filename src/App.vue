@@ -1,10 +1,28 @@
-<script setup>
- import {RouterView } from 'vue-router'
-import Header from './components/Header.vue';
-import Footer from './components/Footer.vue';
- 
+<script>
 
- 
+ import {RouterView } from 'vue-router'
+ import Header from './components/Header.vue';
+ import Footer from './components/Footer.vue';
+
+  export default {
+
+    data() {
+      return {
+        count: 1
+      }
+    },
+    components: {
+      Header,
+      Footer
+
+    },
+    mounted() {
+  
+      console.log(this.count)
+      this.count = 2
+      
+    }
+  }
 
 </script>
 
@@ -12,6 +30,7 @@ import Footer from './components/Footer.vue';
 
    <Header/>
   <div class="content">
+
     <RouterView />
   </div>
 
@@ -21,7 +40,7 @@ import Footer from './components/Footer.vue';
 <style scoped>
 
   .content{
-    border: 1px solid;
+    
   }
 
 </style>
