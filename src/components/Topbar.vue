@@ -1,9 +1,10 @@
-<script>
+<script setup >
 import { RouterLink } from 'vue-router';
+import { useCounterStore } from "../store/counter";
 
+const store = useCounterStore();
 
-
-
+console.log(store);
   
 </script>
 <template>
@@ -13,8 +14,8 @@ import { RouterLink } from 'vue-router';
                <div class="left col-xs-12 col-md-7 col-lg-6 ">
                   <div class="d-flex justify-content-center  ">
                       <div class="item ">
-                          <span class="light-text pe-2">Email:</span>
-                          <span>support@sinrato.com</span>
+                          <span class="light-text pe-2">Email:{{store.count}}</span>
+                          <span @click="store.increament" >support@sinrato.com</span>
                       </div>
                       <span class="px-3" >|</span>
                       <div class="item">
